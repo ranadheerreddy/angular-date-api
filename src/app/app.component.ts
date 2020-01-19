@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from './api.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { ApiService } from './api.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   dateTimeObj;
   date: string;
   year: string;
@@ -15,6 +15,7 @@ export class AppComponent {
 
   ngOnInit() {
     // assign API response to dateTimeObj on loading of application
+    this.service.getDateTimeAPI().subscribe((data) => this.dateTimeObj = data);
   }
 
   getDateTime() {

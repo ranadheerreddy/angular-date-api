@@ -4,4 +4,4 @@ This an angular app for Date api that fetches the date and year. url from which 
 
  # The ng test should successfully test the service code that you write and code has to adhere to end to end and unit test...
 
-You can find the images in the assets folder from which you can get the query(what the exact requirement is).
+ # You can find the images in the assets folder from which you can get the query(what the exact requirement is).

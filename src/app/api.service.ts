@@ -12,7 +12,7 @@ export class ApiService {
 
   getDateTimeAPI() {
     // Call the API and return the response (change the code below)
-    this.http.get('https://jsonmock.hackerrank.com/datetime').map((res: Response) => res.json());
+
     let res: Response;
     return res.json();
 
